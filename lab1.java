@@ -18,7 +18,49 @@ public class lab1 extends JPanel {
 			int whichTransform = transformSelect.getSelectedIndex();
 
 			// TODO Apply transforms here, depending on the value of whichTransform!
-
+	switch(whichTransform) {
+            case 0:
+                break;
+            case 1:
+                g2.scale(0.5, 0.5);
+                break;
+            case 2:
+                g2.rotate(45*Math.PI/180);
+                break;
+            case 3:
+                g2.scale(-0.5, 1);
+                g2.rotate(180*Math.PI/180);
+                break;
+            case 4:
+                g2.shear(0.5, 0);
+                break;
+            case 5:
+                g2.scale(1, 0.4);
+                g2.translate(0, -605);
+                break;
+            case 6:
+                g2.rotate(90*Math.PI/180);
+                g2.shear(0.5, 0);
+                break;
+            case 7:
+                g2.scale(0.5, 1);
+                g2.rotate(180*Math.PI/180);
+                break;
+            case 8:
+                g2.rotate(30*Math.PI/180);
+                g2.scale(1, 0.4);
+                g2.translate(25, 350);
+                break;
+            case 9:
+                g2.rotate(180*Math.PI/180);
+                g2.shear(0, 0.5);
+                g2.translate(-165, 50);
+                break;
+            default:
+        }
+		
+			
+			
 		
 		int[] xpts = new int[14];
 		int[] ypts = new int[14];
